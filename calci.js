@@ -14,10 +14,4 @@ function multiply(a, b) {
 }
 console(multiply(10,5));
 
-function divide(a, b) {
-    if (b === 0) {
-        return "Cannot divide by zero!";
-    }
-    return a / b;
-}
-console(divide(10,5));
+
