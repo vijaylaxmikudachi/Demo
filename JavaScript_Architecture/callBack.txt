@@ -7,6 +7,8 @@ Callbacks are typically used for asynchronous operations but can also be used fo
 A Promise in JavaScript is an object that represents the eventual completion (or failure) of 
 an asynchronous operation and its resulting value. Promises allow you to chain asynchronous operations and 
 handle their results in a more readable and manageable way compared to callbacks.
+ .then() .catch()
+ Promise.all() and Promise.race()
 
 3.async/await:
 The async/await syntax in JavaScript is a modern way to handle asynchronous operations. 
@@ -15,3 +17,4 @@ especially when dealing with sequential or chained operations.
 async: Declaring a function with async means that it will always return a promise.
 await: The await keyword is used to pause the execution of the function until the promise is resolved or rejected. 
 It can only be used inside an async function.
+Easier to debug because it allows breaking and stepping through code more intuitively than with promise chains.
