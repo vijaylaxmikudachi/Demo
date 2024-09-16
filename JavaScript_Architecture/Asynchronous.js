@@ -1,6 +1,6 @@
 console.log("Placing order for food...");
 
-// Simulating asynchronous food preparation (e.g., cooking in the background)
+//  (e.g., cooking in the background)
 function prepareFoodAsync(callback) {
     console.log("Preparing food...");
     setTimeout(() => {
