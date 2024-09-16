@@ -1,0 +1,17 @@
+1.Callbacks:
+A callback in JavaScript is a function that is passed as an argument to another function and 
+is invoked (called back) after the main function has completed its execution. 
+Callbacks are typically used for asynchronous operations but can also be used for synchronous ones.
+
+2.Promises:
+A Promise in JavaScript is an object that represents the eventual completion (or failure) of 
+an asynchronous operation and its resulting value. Promises allow you to chain asynchronous operations and 
+handle their results in a more readable and manageable way compared to callbacks.
+
+3.async/await:
+The async/await syntax in JavaScript is a modern way to handle asynchronous operations. 
+It is built on top of Promises but provides a cleaner and more readable way to work with asynchronous code,
+especially when dealing with sequential or chained operations.
+async: Declaring a function with async means that it will always return a promise.
+await: The await keyword is used to pause the execution of the function until the promise is resolved or rejected. 
+It can only be used inside an async function.

@@ -1,0 +1,33 @@
+The event loop is a key concept in JavaScript's execution model that 
+allows non-blocking, asynchronous operations despite JavaScript being single-threaded. 
+It ensures that tasks like fetching data from a server or reading a file 
+do not block the execution of other code while waiting for these operations to complete.
+--> Components of the Event Loop
+    1.Call stack:
+        The call stack is where JavaScript keeps track of what function is currently being executed.
+    2.Web Api:
+        These APIs work in the background and don't block the main thread.
+
+    3.Callback queue/Task queue:
+        When an asynchronous operation (e.g., a setTimeout or a fetch request) completes, 
+        its callback is pushed into the callback queue (or task queue).
+    4.Event loop:
+        The event loop continuously monitors the call stack and the callback queue. 
+    5.micro task queue:
+        Promises and certain other asynchronous operations use the microtask queue, 
+        which has a higher priority than the callback queue. 
+
+Key points:
+1. JavaScript is single-threaded but can handle asynchronous tasks using the event loop.
+2. The callback queue is used for async operations like setTimeout and fetch.
+3. while the microtask queue is used for promises and mutation observers.
+4. The event loop ensures that the call stack is always empty before processing tasks from the callback queue or microtask queue.
+
+
+Web APIs
+1.setTimeout
+2.DOM APIs
+3.fetch()
+4.Local storage
+5.Console
+6.Location
