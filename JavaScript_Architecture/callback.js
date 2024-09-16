@@ -8,7 +8,7 @@ function sayGoodbye() {
     console.log("Goodbye!");
 }
 
-greet("John", sayGoodbye);
+greet("Abc", sayGoodbye);
 
 
 //2. Asynchronous callback
