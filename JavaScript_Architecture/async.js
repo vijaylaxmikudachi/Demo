@@ -81,7 +81,7 @@ async function runParallelTasks() {
 
 runParallelTasks();
 
-//5. Async Function Always Returns a Promise
+//5. Async Function Always Retuclearrns a Promise
 
 async function sayHello() {
     return "Hello, world!";
