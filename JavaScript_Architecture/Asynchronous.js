@@ -6,7 +6,7 @@ function prepareFoodAsync(callback) {
     setTimeout(() => {
         console.log("Food is ready!");
         callback();
-    }, 3000); // Simulates a 3-second delay
+    }, 3000); //  a 3-second delay
 }
 
 prepareFoodAsync(() => {
