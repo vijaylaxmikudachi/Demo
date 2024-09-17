@@ -1,0 +1,5 @@
+var: Declarations are hoisted and initialized to undefined. Accessible before initialization but holds undefined.
+let & const: Declarations are hoisted but not initialized, and they exist in a Temporal Dead Zone (TDZ) until their actual declaration is reached.
+Function declarations: Both the declaration and the function body are hoisted. Can be invoked before their definition.
+Function expressions: The variable declaration is hoisted (as undefined), but the function itself is not hoisted.
+Class declarations: Declarations are hoisted but are in the TDZ, similar to let and const.
