@@ -1,0 +1,18 @@
+Closures are a core concept in JavaScript that allow functions to 
+maintain references to their lexical scope even after the outer function has returned. 
+They provide the foundation for advanced patterns like function factories, data encapsulation,
+and memoization, but can also lead to tricky bugs, especially in the context of loops or memory management. 
+Understanding closures is essential for writing efficient and modular JavaScript code.
+A closure in JavaScript is a powerful feature that allows a function to access variables 
+from its outer lexical environment even after the outer function has finished executing. 
+This happens because functions in JavaScript maintain a reference to the scope in which they were created.
+
+In simple terms, a closure is created when a function is defined inside another function 
+and the inner function references variables from the outer function's scope. 
+Even if the outer function has returned, the inner function continues to "remember" and access these variables.
+
+*Closures and Garbage Collection
+Closures can sometimes unintentionally hold onto memory because the variables 
+they close over will not be garbage collected as long as the closure exists. 
+To prevent memory leaks, you need to be careful with closures, particularly in 
+long-running applications where closures may be inadvertently created and persist longer than necessary.
