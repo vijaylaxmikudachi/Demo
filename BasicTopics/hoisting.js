@@ -18,7 +18,7 @@ console.log(b);
 const b = 7;
 
 //Function expressions
-func(); // TypeError: bar is not a function
+func(); // TypeError: func is not a function
 
 var func = function() {
     console.log("This is a function expression.");
