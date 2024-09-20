@@ -1,0 +1,55 @@
+node
+$ node
+> 2 + 2
+4
+> console.log("Hello, REPL!");
+Hello, REPL!
+undefined
+1.Basic evaluation
+> 10 * 5
+50
+> "Node".toUpperCase()
+'NODE'
+
+2.Variable Declaration
+> let name = "Alice";
+undefined
+> name
+'Alice'
+
+3.Multiline Exp
+> function greet(name) {
+ console.log("Hello, " + name);
+ }
+undefined
+> greet("vijju");
+Hello, vijju
+4.Special commands
+> .help
+.break    Sometimes you get stuck, this gets you out
+.clear    Alias for .break
+.exit     Exit the REPL
+.help     Print this help message
+.load     Load JS from a file into the REPL session
+.save     Save all evaluated commands in this REPL session to a file
+
+5.Accessing the last result
+> 5 + 5
+10
+> _ * 2
+20
+
+6.Working with global obj
+> global.a = 100;
+undefined
+> global.a
+100
+
+7.Error handling
+func()
+ReferenceError: func() is not defined
+
+8.Asynchronous code
+> setTimeout(() => console.log('Hello '), 1000);
+undefined
+Hello 
