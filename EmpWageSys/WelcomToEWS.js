@@ -13,23 +13,29 @@ if (attendance === 1) {
 const WAGE_PER_HOUR = 20;
 const FULL_DAY_HOURS = 8;
 const PART_TIME_HOURS = 4;
-const WORKING_DAYS_PER_MONTH = 20;
+const MAX_WORKING_HOURS = 100;
+const MAX_WORKING_DAYS = 20;
 
-// Initialize monthly wage
+// Initialize variables
+let totalWorkingHours = 0;
+let totalWorkingDays = 0;
 let monthlyWage = 0;
 
-// Calculate monthly wage based on daily wages
-for (let day = 1; day <= WORKING_DAYS_PER_MONTH; day++) {
+// Calculate monthly wage until conditions are met
+while (totalWorkingHours < MAX_WORKING_HOURS && totalWorkingDays < MAX_WORKING_DAYS) {
   const attendance = Math.floor(Math.random() * 2);
   const employmentType = Math.floor(Math.random() * 2);
 
   switch (attendance) {
     case 1:
+      totalWorkingDays++;
       switch (employmentType) {
         case 0:
+          totalWorkingHours += FULL_DAY_HOURS;
           monthlyWage += FULL_DAY_HOURS * WAGE_PER_HOUR;
           break;
         case 1:
+          totalWorkingHours += PART_TIME_HOURS;
           monthlyWage += PART_TIME_HOURS * WAGE_PER_HOUR;
           break;
         default:
