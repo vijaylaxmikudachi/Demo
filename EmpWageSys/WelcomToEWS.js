@@ -12,17 +12,7 @@ if (attendance === 1) {
 //Daily wages of emp
 const WAGE_PER_HOUR = 20;
 const FULL_DAY_HOURS = 8;
-
-// Calculate daily wage based on attendance
-if (attendance === 1) {
-  const dailyWage = FULL_DAY_HOURS * WAGE_PER_HOUR;
-  console.log("Daily Wage:", dailyWage);
-} else {
-  console.log("Daily Wage: 0 (Employee is Absent)");
-}
-
 //Part time wages
-
 const PART_TIME_HOURS = 4;
 
 // random number for employment type (0 for full-time, 1 for part-time)
@@ -30,12 +20,12 @@ const employmentType = Math.floor(Math.random() * 2);
 
 // Calculate daily wage based on attendance and employment type
 if (attendance === 1) {
-  if (employmentType === 1) {
+  if (employmentType === 0) {
     const dailyWage = FULL_DAY_HOURS * WAGE_PER_HOUR;
     console.log("Daily Wage:", dailyWage);
   } else {
     const dailyWage = PART_TIME_HOURS * WAGE_PER_HOUR;
-    console.log("Daily Wage:", dailyWage);
+    console.log("Daily Part time Wage:", dailyWage);
   }
 } else {
   console.log("Daily Wage: 0 (Employee is Absent)");
