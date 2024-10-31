@@ -17,9 +17,6 @@ This project is a deep dive into JavaScript, covering essential concepts and int
 7. [Generator Functions](#generator-functions)
 8. [IIFE (Immediately Invoked Function Expression)](#iife-immediately-invoked-function-expression)
 9. [Prototype](#prototype)
-10. [Project Structure](#project-structure)
-11. [Installation and Usage](#installation-and-usage)
-12. [License](#license)
 
 ---
 
